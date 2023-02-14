@@ -1,0 +1,175 @@
+.intro{
+    display: flex;
+    height: 77vh;
+    margin-top: 6rem;
+}
+
+.i-left{
+    display: flex;
+    position: relative;
+    flex: 1;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.i-right{
+    flex: 1;
+}
+
+.i-name{
+    display: flex;
+    flex-direction: column;
+}
+
+.i-name>:nth-child(1){
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--black);
+}
+
+.i-name>:nth-child(2){
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--orange);
+}
+
+i-name>:nth-child(3){
+    font-size: 14px;
+    font-weight: 100;
+    color: var(--gray);
+    margin-top: 10px;
+}
+
+.i-button{
+    width: 7rem;
+    height: 3rem;
+  
+}
+
+.i-icons{
+    margin-top: 2rem;
+    display: flex;
+    gap: 1rem;
+    
+}
+
+.i-right{
+    flex: 1;
+    position: relative;
+}
+
+.i-right>*{
+    position: absolute;
+    z-index: 1;
+}
+
+.i-right>:nth-child(1){
+    /* opacity: 30%; */
+    /* background-blend-mode: screen; */
+    transform: scale(1.2);
+    right: 55%;
+    bottom: 50%;
+}
+
+.i-right>:nth-child(2){
+    transform: scale(0.5);
+    border-radius: 100%;
+    bottom: 30rem;
+    left: -3%;
+}
+
+.blur{
+    position: absolute;
+    z-index: -9;
+    width: 32rem;
+    height: 19rem;
+    border-radius: 50%;
+    background: #edd0ff;
+    top: -8%;
+    left: 68%;
+    filter: blur(255px);
+    filter: blur(60px);
+}
+
+/* @media screen and (max-width : 480px){
+    .intro{
+        flex-direction: column;
+        height: 50rem;
+        gap: 7rem;
+    }
+    .i-right{
+        transform: scale(0.8);
+        left: -3rem;
+    }
+
+    .floating-div{
+        top: -7rem !important;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .i-right>:nth-child(1){
+        transform: scale(0.9);
+        left: 15rem;
+        top: -55rem;
+    }
+
+    .i-right>:nth-child(2){
+        transform: scale(0.3);
+        right: 32rem;
+        top: -90rem;
+        position: static;
+        display: none;
+
+    }
+
+    .delete{
+        display: none;
+    }
+} */
+
+
+/* <-----------------------------------------------------------------------> */
+
+
+@media only screen and (max-width: 480px) {
+    .intro {
+      /* height: auto;
+      margin-top: 3rem; */
+      height: 25rem;
+      gap: 3rem;
+      flex-direction: column;
+    }
+  
+    .i-left {
+      height: auto;
+      gap: 1rem;
+    }
+  
+    .i-right {
+      display: none;
+    }
+  
+    .i-name {
+      text-align: center;
+    }
+  
+    .i-button {
+      width: 100%;
+    }
+  
+    .i-icons {
+      text-align: center;
+    }
+  
+    .i-right > * {
+      position: static;
+    }
+  
+    .blur {
+      display: none;
+    }
+  }
+
+
+

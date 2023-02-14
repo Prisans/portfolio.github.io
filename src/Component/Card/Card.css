@@ -1,0 +1,93 @@
+.card{
+    width: 10rem;
+    height: 20rem;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    align-items: center;
+    width: 15rem;
+    text-align: center;
+    background: rgba(255 255 255 0.35);
+    border: 7px solid var(--orangeCard);
+    box-shadow: var(--boxShadow);
+    border-radius: 20px;
+    padding: 0 26px 2px 26px;
+}
+
+.card span:nth-of-type(2){
+    color: var(--gray);
+    font-style: 14px;
+}
+
+.card>img{
+    transform: scale(0.6);
+    margin-bottom: -3.5rem;
+}
+
+.c-button{
+    background: #ef730693;
+    box-shadow: 0 19px 60px 68px rgba( 0 0 0 0.08);
+    border-radius: 7px;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    color: rgb(18, 16, 20);
+
+}
+
+/* @media screen and (max-width : 680px){
+    .card{
+        width: auto;
+
+    }
+} */
+
+
+/* <----------------------------------------------------------------------------> */
+
+/* @media (max-width: 480px) {
+    .card {
+      width: 80%;
+      height: auto;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    
+    .card>img {
+      transform: scale(0.8);
+      margin-bottom: -1.5rem;
+    }
+    
+    .card span:nth-of-type(2) {
+      font-size: 12px;
+    }
+    
+    .c-button {
+      font-size: 14px;
+    }
+  } */
+
+
+/* <-------------------------------------------------------------------------------> */
+
+
+@media only screen and (max-width: 480px) {
+    .card{
+        width: 100%;
+        height: auto;
+        border-radius: 0;
+        padding: 0 10px 2px 10px;
+    }
+    .card span:nth-of-type(2){
+        font-style: 10px;
+    }
+    .card>img{
+        transform: scale(0.4);
+        margin-bottom: -2rem;
+    }
+    .c-button{
+        padding: 5px;
+        font-size: 12px;
+    }
+}

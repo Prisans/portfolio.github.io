@@ -1,0 +1,70 @@
+.contact-form{
+    display: flex;
+    padding: 0 3rem 0 3rem ;
+    margin-top: 4rem;
+    height: 80vh;
+
+}
+
+.c-right{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    flex: 1;
+}
+
+.c-right>form{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+
+}
+/* 
+.c-right>user{
+    width: 20%;
+    height: 90%;
+    padding: 0.3rem;
+    outline: none;
+    border: 2px solid var(--orange);
+    border-radius: 8px;
+    font-size: 18px;
+} */
+
+.user{
+    width: 200%;
+    height: 9%;
+    padding: 0.3rem;
+    outline: none;
+    border: 2px solid var(--orange);
+    border-radius: 8px;
+    font-size: 18px;
+}
+
+textarea{
+    height: 4rem!important;
+}
+
+.c-blur1{
+    top: 1rem;
+    left: 8rem;
+}
+
+
+/* <--------------------------------------------------------------------------------> */
+
+@media only screen and (max-width: 480px) {
+    .contact-form {
+      flex-direction: column;
+      height: auto;
+      padding-top: 3rem;
+    }
+  
+    .c-right {
+      justify-content: flex-start;
+    }
+  
+    .user {
+      width: 100%;
+    }
+  }

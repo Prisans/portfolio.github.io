@@ -1,0 +1,147 @@
+.n-wrapper{
+    height: 10vh;
+    display: flex;
+    justify-content :space-between;
+}
+
+.n-left{
+    flex: 1;
+    align-items: center;
+    display: flex;
+    gap: 2rem;
+}
+
+.n-name{
+    font-size: 1.3rem;
+    font-weight: bold;
+
+}
+
+.n-right{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+}
+
+.n-list>ul{
+    display: flex;
+    gap: 2rem;
+    margin-right: 4rem;
+    cursor: pointer;
+
+    
+}
+
+.n-list>ul>Link>li:hover{
+    cursor: pointer;
+    color: var(--orange);
+}
+
+.n-button{
+    flex: 2;
+}
+
+/* @media screen and (max-width : 480px){
+    .n-list{
+        display: none;
+
+    }
+    .n-button{
+        display: none;
+    }
+} */
+
+/* ------------------------------------------------------------------------------------ */
+
+
+/* @media (max-width: 480px) {
+    .n-wrapper {
+      flex-wrap: wrap;
+      height: auto;
+    }
+  
+    .n-left,
+    .n-right {
+      flex: 100%;
+      justify-content: center;
+      text-align: center;
+    }
+  
+    .n-name {
+      font-size: 1.1rem;
+    }
+  
+    .n-list > ul {
+      display: block;
+      gap: 0;
+      margin-right: 0;
+    }
+  } */
+
+
+  /* <------------------------------------------------------------> */
+
+  @media (max-width: 480px) {
+    .n-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      height: auto;
+    }
+    
+    .n-left,
+    .n-right {
+      flex: 100%;
+      justify-content: center;
+      text-align: center;
+    }
+    
+    .n-name {
+      font-size: 1.8rem;
+      margin-bottom: 2rem;
+    }
+    
+    .n-list > ul {
+    
+      display: flex;
+      gap: 35px;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .n-list > ul > li {
+      flex: 1;
+    }
+    
+    .n-list > ul > li > a {
+      display: block;
+      padding: 10px;
+      color: #333;
+      text-decoration: none;
+    }
+    
+    .n-list > ul > li > a:hover {
+      background-color: #ffa500;
+    }
+  }
+
+  @keyframes slideInDown {
+    from {
+      transform: translateY(-100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+  
+  .n-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    animation: slideInDown 0.5s ease-out;
+  }
